@@ -29,6 +29,7 @@ if (isset($_POST['update'])) {
     <center>
         <h1>Edit Employee</h1>
         <form method="POST">
+            <input type="hidden" name="id" value="<?php echo $row[0]; ?>">
             Name: <input type="text" name="name" value="<?php echo $row[1]; ?>"><br>
             Email: <input type="text" name="email" value="<?php echo $row[2]; ?>"><br>
             Department: <input type="text" name="department" value="<?php echo $row[3]; ?>"><br>
